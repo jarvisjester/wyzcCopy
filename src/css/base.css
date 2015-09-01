@@ -1,0 +1,11 @@
+
+body{
+    font-family: "microsoft yahei"; }
+@media screen and (min-width:1200px){
+    w-content{width:1200px; margin:0px auto;}
+}
+.left{  float: left;}
+.right{
+    float: right!imporant;
+    width: 100px;
+    height: ;}

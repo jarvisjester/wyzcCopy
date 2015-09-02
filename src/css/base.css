@@ -1,11 +1,25 @@
 
-body{
-    font-family: "microsoft yahei"; }
+body{ margin:0px;  font-family: "microsoft yahei"; font-size: 14px; }
 @media screen and (min-width:1200px){
-    w-content{width:1200px; margin:0px auto;}
+    .w-content{width:1200px; margin:0px auto;}
 }
-.left{  float: left;}
-.right{
-    float: right!important;
-    width: 100px;
-    height: 30px; font-size: 12px;}
+@media screen and (min-width:1200px){
+    .search-wrap input{width:420px; margin:0px auto;}
+}
+a{ text-decoration: none; color:#252525;}
+ul li{ list-style: none;}
+.ul-fl li{ float: left;}
+.left{  float: left!important;}
+.right{  float: right!important;}
+.icon{  }
+.header{height:80px; width:100%; margin-top:10px;}
+.head-top{ overflow: hidden;}
+.head-top .search-wrap{ height:38px; border:1px solid #1e9ff6; overflow:hidden;}
+.search-box{ padding:15px 10px 0px 0px; margin-left: 100px;}
+.search-wrap input{ float:left; height:20px;padding:9px 4px; background:none ; border:none; outline:none;}
+.search-wrap a{ float:right; height: 38px; width: 60px; background: url("../image/icon/n-icon.png") 7px -5px no-repeat #1e9ff6;}
+.head-top ul li{ width: 96px;}
+.head-top ul li.quick-nav{ padding-left:10px;}
+.head-top ul li.quick-nav span{ width:76px; height:40px;display: block; float: left; padding-right: 20px; line-height: 40px; background: url("../image/icon/bg-q-arrow.png") right -137px no-repeat;}
+.head-top ul li.quick-nav span:hover{ background-position: right -92px;}
+.head-top ul li.gate-nav{ line-height: 40px; padding-left: 10px;}

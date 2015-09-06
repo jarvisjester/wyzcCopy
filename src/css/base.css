@@ -7,8 +7,15 @@ body{ margin:0px;  font-family: "microsoft yahei"; font-size: 14px; }
     .search-wrap input{width:420px; margin:0px auto;}
 }
 /*base*/
-.clearfix:after{ display: block; content: "."; visibility: hidden; zoom:1; clear: both;}
+body, div, span, a, img, iframe, form, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, em, var, strong, input, p, textarea, select, option, table, tr, td, button {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Arial,"microsoft yahei","Arial";
+}
+.clearfix:after{ display: block; height: 0px; content: "."; visibility: hidden; zoom:1; clear: both;}
 a{ text-decoration: none; color:#252525;}
+ul{margin:0px;}
 ul li{ list-style: none;}
 .ul-fl li{ float: left;}
 .left{  float: left!important;}
@@ -16,15 +23,22 @@ ul li{ list-style: none;}
 .icon{  }
 .header{height:80px; width:100%; margin-top:10px;}
 .head-top{ }
+.n-header-top {  height: 60px;  padding: 20px 0 15px;  }
 .head-top .search-wrap{ height:38px; border:1px solid #1e9ff6; overflow:hidden;}
-.search-box{ padding:15px 10px 0px 0px; margin-left: 100px;}
+.search-box{ padding:15px 10px 0px 0px; margin-left: 70px;}
 .search-wrap input{ float:left; height:20px;padding:9px 4px; background:none ; border:none; outline:none;}
 .search-wrap a{ float:right; height: 38px; width: 60px; background: url("../image/icon/n-icon.png") 7px -5px no-repeat #1e9ff6;}
-.head-top ul li{ width: 96px;}
+.head-top .ul-fl{padding-top: 14px; float: right;}
+.head-top ul li{ width: 96px; z-index: 100;}
 .head-top ul li.quick-nav{ padding-left:10px; position: relative;}
-.quick-nav .popupdown{  position:  absolute; width: 260px; top: 40px; right:0px; border:1px solid #1e9ff6; box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0,0,0,0.15); z-index: 10;}
-.head-top ul li.quick-nav span{ width:76px; height:40px;display: block; float: left; padding-right: 20px; line-height: 40px;
-    background: url("../image/icon/bg-q-arrow.png") right -137px no-repeat; transition: all 0.2s ease;}
-.head-top ul li.quick-nav span:hover{ background-position: right -92px;}
-.head-top ul li.quick-nav:hover{border:1px solid #1e9ff6;}
+.quick-nav .popupdown{  position:  absolute; width: 260px; top: 40px; right:-2px; border:1px solid #1e9ff6; box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0,0,0,0.15); z-index: 10; background-color: #fff; padding:10px 0px;}
+.popupdown dl{}
+.popupdown a{ display: block; width: 100px; margin-left: 30px; float: left; line-height: 24px;}
+.head-top ul li.quick-nav span{ width:76px; height:40px;display: block; float: left; padding-right: 20px; line-height: 40px; text-align: center;
+    background: url("../image/icon/bg-q-arrow.png") right -137px no-repeat; transition: all 0.2s ease; border:1px solid #fff; z-index: 15; background-color:#fff; position: relative;}
+.head-top ul li.quick-nav.active span{ background-position: right -92px; border:1px solid #1e9ff6; border-bottom: none; z-index: 13;}
 .head-top ul li.gate-nav{ line-height: 40px; padding-left: 10px;}
+.nav-main ul{ padding-left: 275px;}
+.nav-main ul li{  float: left; height: 52px; line-height: 52px;padding-left: 40px;}
+.nav-main ul li a{ color:#333; font-size: 16px;}
+    .nav-main ul li.active a{ color:#188eee;}

@@ -41,4 +41,4 @@ ul li{ list-style: none;}
 .nav-main ul{ padding-left: 275px;}
 .nav-main ul li{  float: left; height: 52px; line-height: 52px;padding-left: 40px;}
 .nav-main ul li a{ color:#333; font-size: 16px;}
-    .nav-main ul li.active a{ color:#188eee;}
+.nav-main ul li.active a{ color:#188eee;}
